@@ -1,5 +1,5 @@
 <?php require_once("topic.php");
-ob_start(); ?>
+?>
 
 <body class="bg-blue-50 font-Ubuntu group">
 
