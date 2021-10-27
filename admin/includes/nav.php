@@ -25,7 +25,7 @@ ob_start(); ?>
     <div class="flex flex-col justify-between text-lg">
       <ul class="pt-4 font-Ubuntu mr-2 text-sm text-gray-600">
 
-        <li class="rounded-lg p-2 mr-4 ml-6 mt-6 <?php name("index.php"); ?> ">
+        <li class="rounded-lg hover:bg-blue-800 transition duration-100 hover:text-white p-2 mr-4 ml-6 mt-6 <?php name("index.php"); ?> ">
           <a class="an pl-3 flex items-center" href="index.php">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
@@ -34,7 +34,7 @@ ob_start(); ?>
           </a>
         </li>
 
-        <li class="rounded-lg p-2 mr-4 ml-6 mt-2 <?php name("post.php"); ?> ">
+        <li class="rounded-lg hover:bg-blue-800 transition duration-100 hover:text-white p-2 mr-4 ml-6 mt-2 <?php name("post.php"); ?> ">
           <a class="pl-3 flex items-center" href="post.php">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
@@ -43,7 +43,7 @@ ob_start(); ?>
           </a>
         </li>
 
-        <li class="rounded-lg p-2 mx-4 ml-6 mt-2 <?php name("viewyourpost.php"); ?> ">
+        <li class="rounded-lg hover:bg-blue-800 transition duration-100 hover:text-white p-2 mx-4 ml-6 mt-2 <?php name("viewyourpost.php"); ?> ">
           <a class="pl-3 flex items-center" href="viewyourpost.php">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -51,7 +51,7 @@ ob_start(); ?>
             <p id="title2">View Your Post</p>
           </a>
         </li>
-        <li class="rounded-lg p-2 mx-4 ml-6 mt-2 <?php name("viewallpost.php"); ?> " id="visLi">
+        <li class="rounded-lg hover:bg-blue-800 transition duration-100 hover:text-white p-2 mx-4 ml-6 mt-2 <?php name("viewallpost.php"); ?> " id="visLi">
           <a class="pl-3 flex items-center" href="viewallpost.php">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -64,7 +64,7 @@ ob_start(); ?>
           </a>
         </li>
 
-        <li class="rounded-lg p-2 mx-4 ml-6 mt-2 <?php name("adduser.php"); ?> " id="visLi1">
+        <li class="rounded-lg hover:bg-blue-800 transition duration-100 hover:text-white p-2 mx-4 ml-6 mt-2 <?php name("adduser.php"); ?> " id="visLi1">
           <a class="pl-3 flex items-center" href="adduser.php">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
@@ -77,7 +77,7 @@ ob_start(); ?>
           </a>
         </li>
 
-        <li class="rounded-lg p-2 mx-4 ml-6 mt-2 <?php name("viewalluser.php"); ?> " id="visLi2">
+        <li class="rounded-lg p-2 hover:bg-blue-800 transition duration-100 transition duration-200 hover:text-white mx-4 ml-6 mt-2 <?php name("viewalluser.php"); ?> " id="visLi2">
           <a class="pl-3 flex items-center" href="viewalluser.php">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -91,10 +91,8 @@ ob_start(); ?>
         </li>
 
       </ul>
-      <?php if ($session->rule == 1) { ?>
-        <p class="absolute text-base font-bold text-blue-800 bottom-20 left-14">Welcome Admin</p>
-      <?php } else { ?>
-        <p class="absolute text-base font-bold text-blue-800 bottom-20 left-16">Welcome Editor</p>
-      <?php } ?>
+      <div class="absolute bg-blue-800 w-full p-2 bottom-20 left-0">
+        <p class="text-xl flex justify-center font-bold text-white">Welcome</p>
+      </div>
     </div>
   </section>
