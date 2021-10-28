@@ -30,9 +30,9 @@ function rule($x)
 {
     global $session;
     if ($session->rule == 1) {
-        echo '<svg hidden xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 transform" id="visIcon'.$x.'" viewBox="0 0 20 20" fill="currentColor" >';
+        echo '<svg hidden xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-gray-400 transform" id="visIcon'.$x.'" viewBox="0 0 20 20" fill="currentColor" >';
         }else{
-          echo '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 transform translate-x-6 " id="visIcon'.$x.'" viewBox="0 0 20 20" fill="currentColor" >';
+          echo '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-gray-400 transform translate-x-6 " id="visIcon'.$x.'" viewBox="0 0 20 20" fill="currentColor" >';
          }
 }
 

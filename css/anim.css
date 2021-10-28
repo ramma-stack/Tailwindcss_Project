@@ -1,5 +1,7 @@
-.menu
-{
-	width: 120px;
-	/* animation: pulse 1s none; */
+
+.active{
+	width: 90px;
+}
+.active:hover{
+	width: 250px;
 }
