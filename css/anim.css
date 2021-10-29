@@ -1,7 +1,39 @@
 
 .active{
-	width: 90px;
+	width: 85px;
 }
 .active:hover{
 	width: 250px;
+}
+.chekcustom{
+	appearance: none;
+	border: 2px solid rgb(226, 22, 22);
+	border-radius: 3px;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+.chekcustom:hover{
+	cursor: pointer;
+	position: relative;
+}
+.chekcustom:checked{
+	background-color: red;
+}
+.chekcustom:checked::after{
+    content: '\2714';
+	display: flex;
+	justify-content: center;
+	margin: -3px;
+	color: white;
+	animation-name: sa7;
+	animation-duration: 0.3s;
+}
+@keyframes sa7{
+	100%{
+	transform: scale(1);
+	}
+	0%{	
+	transform: scale(0);
+	}
 }
