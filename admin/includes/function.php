@@ -37,6 +37,8 @@ function rule($x)
 }
 
 if (isset($_GET['logout'])) {
+    setcookie("username", "", time() - 3600);
+    setcookie("password", "", time() - 3600);
     $session->logout();
     direction("login.php");
 }

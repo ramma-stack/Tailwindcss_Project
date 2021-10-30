@@ -16,8 +16,8 @@ in(0); ?>
                 <p class="text-gray-700 text-sm">Sign in to continue.</p>
             </span>
             <form action="<?= $_SERVER['PHP_SELF']; ?>" class="flex flex-col" method="post">
-                <input value="<?= $username ?>" class="p-3 px-6 my-5 text-sm outline-none border border-gray-300 <?php if(!empty($error)){echo "border-red-300";} ?> focus:border-blue-400 transition-all duration-200 " type="text" placeholder="Username" name="username">
-                <input value="<?= $password ?>" class="p-3 px-6 mb-2 text-sm outline-none border border-gray-300 <?php if(!empty($error)){echo "border-red-300";} ?> focus:border-blue-400 transition-all duration-200 " type="password" placeholder="Password" name="password">
+                <input value="<?php if(isset($_COOKIE['username'])){echo $_COOKIE['username'];}else{echo$username;} ?>" class="p-3 px-6 my-5 text-sm outline-none border border-gray-300 <?php if(!empty($error)){echo "border-red-300";} ?> focus:border-blue-400 transition-all duration-200 " type="text" placeholder="Username" name="username">
+                <input value="<?php if(isset($_COOKIE['password'])){echo $_COOKIE['password'];}else{echo$password;} ?>" class="p-3 px-6 mb-2 text-sm outline-none border border-gray-300 <?php if(!empty($error)){echo "border-red-300";} ?> focus:border-blue-400 transition-all duration-200 " type="password" placeholder="Password" name="password">
                 <div class="w-full">
                     <p class="text-red-600 text-sm font-normal mb-5"><?php if(!empty($error)){echo "Oops, that's not the right password or username. Please try again!";} ?></p>
                 </div>
@@ -30,7 +30,7 @@ in(0); ?>
                 </span>
                 <div class="flex flex-col sm:flex-row items-center justify-between mt-5">
                     <span class="flex items-center">
-                        <input class="chekcustom" type="checkbox" name="" id="">
+                        <input class="chekcustom" type="checkbox" name="remember" id="">
                         <p class="text-gray-700 text-xs">Keep me signed in</p>
                     </span>
                     <a class="underline mt-3 sm:mt-0 text-sm text-gray-900" href="">Forgot password?</a>

@@ -11,6 +11,10 @@
             $this->check_login();
         }
 
+        public function cokkei($login){
+            $this->user_logged = $login;
+        }
+
         public function user_login(){
             return $this->user_logged;
         }

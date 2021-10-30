@@ -1,5 +1,12 @@
 <?php require_once("topic.php");
-ob_start(); ?>
+ob_start();
+
+// echo $_COOKIE['username'];
+// if(!empty($_COOKIE['username'])){
+//     $session->user_logged = true;
+// }
+
+?>
 
 <body class="bg-blue-50 font-Ubuntu group">
 
