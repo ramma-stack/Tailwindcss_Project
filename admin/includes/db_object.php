@@ -2,8 +2,12 @@
 
     class db_object{
 
-        public function get_all(){
-            $query = $this->query_pros("SELECT * FROM ".static::$table_name."");
+        public function get_all($condition){
+            if($condition == 0){
+                $query = $this->query_pros("SELECT * FROM ".static::$table_name."");
+            }else{
+                $query = $this->query_pros("SELECT * FROM ".static::$table_name." WHERE $condition");
+            }
             return $query;
         }
 

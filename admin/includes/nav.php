@@ -1,4 +1,5 @@
-<?php require_once("topic.php");
+<?php
+require_once("topic.php");
 ob_start();
 
 // echo $_COOKIE['username'];
@@ -8,7 +9,7 @@ ob_start();
 
 ?>
 
-<body class="bg-blue-50 font-Ubuntu group">
+<body class="bg-purple-50 font-Ubuntu m-auto">
 
   <section class="flex w-full transition duration-200 fixed z-10 shadow-lg p-2.5 px-8 bg-white items-center justify-between">
 
@@ -18,23 +19,23 @@ ob_start();
     </div>
     <div class="flex w-11/12 items-center justify-between">
 
-    <span id="menuleft" class="hidden lg:inline">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" id="menuicon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" id="closeicon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </span>
+      <span id="menuleft" class="hidden lg:inline">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" id="menuicon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" id="closeicon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </span>
 
-    <span id="menuhide" class="inline lg:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" id="openmenu" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" id="closemenu" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </span>
+      <span id="menuhide" class="inline lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" id="openmenu" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" id="closemenu" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </span>
 
       <div class="flex">
         <a href="?logout" class="text-gray-700 font-Merr mx-2 font-medium text-3xl">Logout</a>
@@ -43,15 +44,16 @@ ob_start();
     </div>
   </section>
 
-    <section id="menu" class="transform lg:translate-x-0 -translate-x-64 transition-all duration-300 w-60 relative p-2 pl-1 h-screen pt-12 bg-gray-50">
+  <section class="flex relative">
+    <div id="menu" class="transition-all duration-500 absolute -left-64 lg:static w-250 lg:w-300 xl:w-72 h-screen pt-12 bg-white">
       <ul class="pt-8 p-4 font-Ubuntu text-sm text-gray-600">
 
-        <li class="rounded-md   overflow-hidden hover:bg-blue-800 flex cursor-pointer hover:text-white p-2.5 mt-1 <?php name("index.php"); ?> ">
+        <li class="rounded-md overflow-hidden hover:bg-blue-800 flex cursor-pointer hover:text-white p-2.5 mt-1 <?php name("index.php"); ?> ">
           <a class="flex items-center whitespace-nowrap " href="index.php">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
             </svg>
-            <p id="title0" class="ml-10 lg:ml-3 transition-width duration-500 ">Dashboard</p>
+            <p id="title0" class="ml-3 transition-width duration-500 ">Dashboard</p>
           </a>
         </li>
 
@@ -113,7 +115,4 @@ ob_start();
         </li>
 
       </ul>
-      <div class="absolute bg-blue-800 w-full py-2 bottom-5 left-0">
-        <p class="flex justify-center xl:text-sm font-bold text-white">Welcome</p>
-      </div>
-    </section>
+    </div>

@@ -1,9 +1,9 @@
 
 .active{
-	width: 85px;
+	width: 72px;
 }
 .active:hover{
-	width: 250px;
+	width: 300px;
 }
 .chekcustom{
 	appearance: none;
@@ -36,4 +36,8 @@
 	0%{	
 	transform: scale(0);
 	}
+}
+.menu{
+	position: absolute;
+	left: 0;
 }

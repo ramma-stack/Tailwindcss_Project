@@ -4,9 +4,12 @@
 
 @layer components {
   .btn {
-    @apply px-4 py-2 flex items-center bg-purple-500 text-white rounded-lg rounded-tl-none transition duration-300 hover:opacity-80;
+    @apply px-4 py-2 flex items-center bg-red-500 text-white rounded-lg rounded-tl-none transition duration-300 hover:opacity-80;
   }
   .btn1 {
-    @apply px-4 py-2 flex items-center bg-blue-500 text-white rounded-md rounded-tr-none transition duration-300 hover:opacity-80;
+    @apply px-4 py-2 flex items-center bg-green-500 text-white rounded-md rounded-tr-none transition duration-300 hover:opacity-80;
+  }
+  .btn2 {
+    @apply px-4 py-2 flex items-center bg-blue-500 text-white rounded-md transition duration-300 ring-2 ring-white hover:ring-blue-400;
   }
 }

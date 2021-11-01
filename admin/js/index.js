@@ -22,15 +22,16 @@ menuicon.addEventListener('click', function(){
 
   openmenu.addEventListener('click', function(){     
 
-    menu.classList.toggle('-translate-x-64');
+    menu.classList.toggle('-left-64');
+    menu.classList.toggle('menu');
     openmenu.classList.toggle('hidden');
     closemenu.classList.toggle('hidden');
     
   });
   closemenu.addEventListener('click', function(){     
-
-    menu.classList.toggle('-translate-x-64');
+    
+    menu.classList.toggle('-left-64');
+    menu.classList.toggle('menu');
     openmenu.classList.toggle('hidden');
     closemenu.classList.toggle('hidden');
   });
-
