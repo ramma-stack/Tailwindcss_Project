@@ -1,12 +1,6 @@
 <?php
 require_once("topic.php");
 ob_start();
-
-// echo $_COOKIE['username'];
-// if(!empty($_COOKIE['username'])){
-//     $session->user_logged = true;
-// }
-
 ?>
 
 <body class="bg-purple-50 font-Ubuntu m-auto">
@@ -45,7 +39,7 @@ ob_start();
   </section>
 
   <section class="flex relative">
-    <div id="menu" class="transition-all duration-500 absolute -left-64 lg:static w-250 lg:w-300 xl:w-72 h-screen pt-12 bg-white">
+    <div id="menu" class="transition-all duration-500 absolute -left-64 lg:static w-250 lg:w-300 h-screen pt-12 bg-white">
       <ul class="pt-8 p-4 font-Ubuntu text-sm text-gray-600">
 
         <li class="rounded-md overflow-hidden hover:bg-blue-800 flex cursor-pointer hover:text-white p-2.5 mt-1 <?php name("index.php"); ?> ">

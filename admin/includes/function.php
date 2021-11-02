@@ -7,7 +7,7 @@ function direction($url)
 function in($i)
 {
     global $session;
-
+    
     if ($i == 0 && $session->user_login()) {
         direction("index.php");
     }
